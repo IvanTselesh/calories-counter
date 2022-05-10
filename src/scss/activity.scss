@@ -1,0 +1,55 @@
+.app-activity {
+  text-align: center;
+}
+
+.app-activity-list-item {
+  display: flex;
+  text-align: left;
+  align-items: baseline;
+  padding: 15px;
+
+  & input {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      border: 2px solid #683309;
+    }
+    &:checked::after {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #683309;
+      transform: translate(-50%, -50%);
+      visibility: visible;
+    }
+  }
+}
+.app-activity-list-item-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+
+  &-text {
+    color: #d9ac8d;
+  }
+}
+
+label {
+  cursor: pointer;
+  color: #683309;
+  font-size: 1.2rem;
+}
+
