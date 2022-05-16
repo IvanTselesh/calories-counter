@@ -14,70 +14,70 @@
       <div class="app-sex">
         <span>Пол</span>
         <div class="app-sex-wrap">
-          <button class="app-sex-wrap-button">Мужчина</button>
-          <button class="app-sex-wrap-button">Женщина</button>
+          <button class="app-sex-wrap-button male">Мужчина</button>
+          <button class="app-sex-wrap-button female">Женщина</button>
         </div>
       </div>
       <div class="app-features">
         <div class="app-features-age feature">
           <span>Возраст</span>
-          <input type="text" class="features-item">
+          <input type="text" class="features-item" size="3" id="age">
         </div>
         <div class="app-features-height feature">
           <span>Рост</span>
-          <input type="text" class="features-item">
+          <input type="text" class="features-item" size="3" id="height">
         </div>
         <div class="app-features-weight feature">
           <span>Вес</span>
-          <input type="text" class="features-item">
+          <input type="text" class="features-item" size="3" id="weight">
         </div>
       </div>
       <div class="app-activity">
         <span>Физическая активность</span>
         <ul class="app-activity-list">
           <li class="app-activity-list-item">
-            <input type="radio" id="1" value="min" name="activity">
+            <input type="radio" id="min" value="min" name="activity" checked="checked">
           <div class="app-activity-list-item-content">
-            <label for="1">Минимальная</label>
+            <label for="min">Минимальная</label>
             <p class="app-activity-list-item-content-text">Ты маленький ленивый тюленик!</p>
           </div>
           </li>
           <li class="app-activity-list-item">
-            <input type="radio" id="2" value="low" name="activity">
+            <input type="radio" id="low" value="low" name="activity">
           <div class="app-activity-list-item-content">
-            <label for="2">Низкая</label>
+            <label for="low">Низкая</label>
             <p class="app-activity-list-item-content-text">Ты уже кот, который может дойти до миски и лотка</p>
           </div>
           </li>
           <li class="app-activity-list-item">
-            <input type="radio" id="3" value="mid" name="activity">
+            <input type="radio" id="mid" value="mid" name="activity">
           <div class="app-activity-list-item-content">
-            <label for="3">Средняя</label>
+            <label for="mid">Средняя</label>
             <p class="app-activity-list-item-content-text">Ты неплохой активист, но не дальше своего райончика</p>
           </div>
           </li>
           <li class="app-activity-list-item">
-            <input type="radio" id="4" value="high" name="activity">
+            <input type="radio" id="high" value="high" name="activity">
           <div class="app-activity-list-item-content">
-            <label for="4">Высокая</label>
+            <label for="high">Высокая</label>
             <p class="app-activity-list-item-content-text">Ты тот еще хищник, который сам себя может обеспечить всем необходимым</p>
           </div>
           </li>
           <li class="app-activity-list-item">
-            <input type="radio" id="5" value="veryhigh" name="activity">
+            <input type="radio" id="max" value="veryhigh" name="activity">
           <div class="app-activity-list-item-content">
-            <label for="5">Очень высокая</label>
+            <label for="max">Очень высокая</label>
             <p class="app-activity-list-item-content-text">Братан, ты существуешь вообще?</p>
           </div>
           </li>
         </ul>
       </div>
       <div class="app-buttons">
-        <button class="app-buttons-item">Рассчитать</button>
-        <button class="app-buttons-item">Очистить всё</button>
+        <button class="app-buttons-item count">Рассчитать</button>
+        <button class="app-buttons-item delete">Очистить всё</button>
       </div>
     </div>
   </section>
-  <script src="./index.js"></script>
+  <script type="module" src="./index.js"></script>
 </body>
 </html>

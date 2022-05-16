@@ -64,6 +64,11 @@ button {
   border: 1px solid #683309;
   color: #683309;
 
+  &:disabled {
+    border: 1px solid #e9d5c4;
+    color: #e9d5c4;
+    background: #808080;
+  }
 
   &:hover {
     background: #d9ac8d;

@@ -6,6 +6,13 @@
   text-align: center;
 }
 
-.app-sex-wrap {
-  
+.app-sex-wrap-button:checked {
+  background: #683309;
+  color: #e9d5c4;
+}
+
+.checked {
+  border: 1px solid #e9d5c4;
+  background: #2e1201;
+  color: #e9d5c4;
 }
