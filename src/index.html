@@ -4,71 +4,80 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./scss/index.scss">
   <title>Document</title>
 </head>
 <body>
-  <header>
-    <h1>Calories Calculator</h1>
-  </header>
   <section class="app">
     <div class="container">
+      <h1>Calories Calculator</h1>
       <div class="app-sex">
         <span>Пол</span>
         <div class="app-sex-wrap">
-          <button>Мужчина</button>
-          <button>Женщина</button>
+          <button class="app-sex-wrap-button male">Мужчина</button>
+          <button class="app-sex-wrap-button female">Женщина</button>
         </div>
       </div>
       <div class="app-features">
-        <div class="app-features-age">
+        <div class="app-features-age feature">
           <span>Возраст</span>
-          <input type="text">
+          <input type="text" class="features-item" size="3" id="age">
         </div>
-        <div class="app-features-height">
+        <div class="app-features-height feature">
           <span>Рост</span>
-          <input type="text">
+          <input type="text" class="features-item" size="3" id="height">
         </div>
-        <div class="app-features-weight">
+        <div class="app-features-weight feature">
           <span>Вес</span>
-          <input type="text">
+          <input type="text" class="features-item" size="3" id="weight">
         </div>
       </div>
       <div class="app-activity">
         <span>Физическая активность</span>
         <ul class="app-activity-list">
           <li class="app-activity-list-item">
-            <input type="radio">
-          <p>Минимальная</p>
-          <p>Ты маленький ленивый тюленик!</p>
+            <input type="radio" id="min" value="min" name="activity" checked="checked">
+          <div class="app-activity-list-item-content">
+            <label for="min">Минимальная</label>
+            <p class="app-activity-list-item-content-text">Ты маленький ленивый тюленик!</p>
+          </div>
           </li>
           <li class="app-activity-list-item">
-            <input type="radio">
-          <p>Низкая</p>
-          <p>Ты уже кот, который может дойти до миски и лотка</p>
+            <input type="radio" id="low" value="low" name="activity">
+          <div class="app-activity-list-item-content">
+            <label for="low">Низкая</label>
+            <p class="app-activity-list-item-content-text">Ты уже кот, который может дойти до миски и лотка</p>
+          </div>
           </li>
           <li class="app-activity-list-item">
-            <input type="radio">
-          <p>Средняя</p>
-          <p>Ты неплохой активист, но не дальше своего райончика</p>
+            <input type="radio" id="mid" value="mid" name="activity">
+          <div class="app-activity-list-item-content">
+            <label for="mid">Средняя</label>
+            <p class="app-activity-list-item-content-text">Ты неплохой активист, но не дальше своего райончика</p>
+          </div>
           </li>
           <li class="app-activity-list-item">
-            <input type="radio">
-          <p>Высокая</p>
-          <p>Ты тот еще хищник, который сам себя может обсупечить вем необходимым</p>
+            <input type="radio" id="high" value="high" name="activity">
+          <div class="app-activity-list-item-content">
+            <label for="high">Высокая</label>
+            <p class="app-activity-list-item-content-text">Ты тот еще хищник, который сам себя может обеспечить всем необходимым</p>
+          </div>
           </li>
           <li class="app-activity-list-item">
-            <input type="radio">
-          <p>Очень высокая</p>
-          <p>Братан, ты существуешь вообще?</p>
+            <input type="radio" id="max" value="veryhigh" name="activity">
+          <div class="app-activity-list-item-content">
+            <label for="max">Очень высокая</label>
+            <p class="app-activity-list-item-content-text">Братан, ты существуешь вообще?</p>
+          </div>
           </li>
         </ul>
       </div>
       <div class="app-buttons">
-        <button>Рассчитать</button>
-        <button>Очистить всё</button>
+        <button class="app-buttons-item count">Рассчитать</button>
+        <button class="app-buttons-item delete">Очистить всё</button>
       </div>
     </div>
   </section>
-  <script src="./index.js"></script>
+  <script type="module" src="./index.js"></script>
 </body>
 </html>
