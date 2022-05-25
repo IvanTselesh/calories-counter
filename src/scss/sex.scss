@@ -5,14 +5,34 @@
   flex-direction: column;
   text-align: center;
 }
+.app-sex-wrap {
+  display: flex;
+  justify-content: space-around;
+}
 
-.app-sex-wrap-button:checked {
-  background: #683309;
-  color: #e9d5c4;
+.app-sex-wrap-button {
+  border: 1px solid #2e1201;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  width: 45%;
+  padding: 10px 0;
+  background: #d9ac8d;
+
+  &:checked {
+    border: 1px solid #e9d5c4;
+    background: #2e1201;
+    color: #e9d5c4;
+  }
+
+  & input {
+    display: none;
+  }
 }
 
 .checked {
   border: 1px solid #e9d5c4;
   background: #2e1201;
   color: #e9d5c4;
-}
+} 
+

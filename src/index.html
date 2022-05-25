@@ -14,29 +14,37 @@
       <div class="app-sex">
         <span>Пол</span>
         <div class="app-sex-wrap">
-          <button class="app-sex-wrap-button male">Мужчина</button>
-          <button class="app-sex-wrap-button female">Женщина</button>
+          <label for="male" class="app-sex-wrap-button male">
+            <input type="radio" id="male" name="sex">
+            <span>Мужчина</span>
+          </label>
+          <label for="female" class="app-sex-wrap-button female">
+            <input type="radio" id="female" name="sex">
+            <span>Женщина</span>
+          </label>
+          <!-- <button class="app-sex-wrap-button male">Мужчина</button>
+          <button class="app-sex-wrap-button female">Женщина</button> -->
         </div>
       </div>
       <div class="app-features">
         <div class="app-features-age feature">
           <span>Возраст</span>
-          <input type="text" class="features-item" size="3" id="age">
+          <input type="text" maxlength="3" class="features-item" id="age">
         </div>
         <div class="app-features-height feature">
           <span>Рост</span>
-          <input type="text" class="features-item" size="3" id="height">
+          <input type="text" maxlength="3" class="features-item" id="height">
         </div>
         <div class="app-features-weight feature">
           <span>Вес</span>
-          <input type="text" class="features-item" size="3" id="weight">
+          <input type="text" maxlength="3" class="features-item" id="weight">
         </div>
       </div>
       <div class="app-activity">
         <span>Физическая активность</span>
         <ul class="app-activity-list">
           <li class="app-activity-list-item">
-            <input type="radio" id="min" value="min" name="activity" checked="checked">
+            <input type="radio" id="min" value="min" name="activity">
           <div class="app-activity-list-item-content">
             <label for="min">Минимальная</label>
             <p class="app-activity-list-item-content-text">Ты маленький ленивый тюленик!</p>
@@ -75,6 +83,20 @@
       <div class="app-buttons">
         <button class="app-buttons-item count">Рассчитать</button>
         <button class="app-buttons-item delete">Очистить всё</button>
+      </div>
+      <div class="app-results">
+        <div class="app-results-item">
+          <span>Снижение веса</span>
+          <input type="number" class="app-results-item-content decrease"></input>
+        </div>
+        <div class="app-results-item">
+          <span>Поддержание веса</span>
+          <input type="number" class="app-results-item-content normal"></input>
+        </div>
+        <div class="app-results-item">
+          <span>Набор веса</span>
+          <input type="number" class="app-results-item-content increase"></input>
+        </div>
       </div>
     </div>
   </section>
