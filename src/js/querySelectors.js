@@ -1,31 +1,21 @@
-export { div, maleBtn, femaleBtn, input, countBtn, removeBtn, inputWrap, age, height, weight, doDefault } from "./defaultValues";
+const maleBtn = document.querySelector('#male');
+const femaleBtn = document.querySelector('#female');
+const input = document.querySelectorAll('.features-item');
+const countBtn = document.querySelector('.count');
+const removeBtn = document.querySelector('.delete');
+const inputWrap = document.querySelector('.app-features');
+const age = document.querySelector('#age');
+const height = document.querySelector('#height');
+const weight = document.querySelector('#weight');
+const min = document.querySelector('#min');
+const low = document.querySelector('#low');
+const mid = document.querySelector('#mid');
+const high = document.querySelector('#high');
+const decrease = document.querySelector('.decrease');
+const normal = document.querySelector('.normal');
+const increase = document.querySelector('.increase');
+const male = document.querySelector('.male');
+const female = document.querySelector('.female');
+const results = document.querySelectorAll('.app-results-item-content');
 
-export function addEventListeners() {
-  femaleBtn.addEventListener('click', () => {
-    if (femaleBtn) {
-      femaleBtn.classList.toggle('checked');
-      maleBtn.classList.remove('checked');
-    }      
-  });
-  
-  maleBtn.addEventListener('click', () => {
-    if (maleBtn) {
-      femaleBtn.classList.remove('checked');
-      maleBtn.classList.toggle('checked');
-    }
-  });
-  
-  inputWrap.addEventListener('keypress', () => {
-    
-    if(age != '' || height != '' || weight != '') {
-      removeBtn.removeAttribute('disabled', 'disabled');
-    };
-  });
-  
-  removeBtn.addEventListener('click', () => {
-    age.value = '';
-    height.value = '';
-    weight.value = '';
-    removeBtn.setAttribute('disabled', 'disabled');
-  });
-}
+export { female, male, maleBtn, femaleBtn, min, countBtn, removeBtn, input, results, increase, normal, decrease, weight, height, age, inputWrap, high, low, mid };
