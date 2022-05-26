@@ -1,10 +1,18 @@
-import { minAct, maleBtn, age, height, weight} from "./querySelectors";
+import { maleBtn, male, female, min, countBtn, removeBtn, input } from "./querySelectors";
 
-/* export function doDefault() {
-  age.innerText = '10';
-  height.textContent = 0;
-  weight.textContent = 0;
+function doDefault() {
+    maleBtn.checked = 'checked';
+    if (maleBtn.checked) {
+        male.classList.add('checked');
+        female.classList.remove('checked')
+    };
+    min.checked = 'checked';
+    countBtn.setAttribute('disabled', 'disabled');
+    removeBtn.setAttribute('disabled', 'disabled');
+    for (let i = 0; i < input.length; i++) {
+        input[i].placeholder = '0';
+        input[i].value = '';
+    };
+};
 
-}
-
-doDefault(); */
+export { doDefault };

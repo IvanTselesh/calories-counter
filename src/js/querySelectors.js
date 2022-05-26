@@ -1,0 +1,21 @@
+const maleBtn = document.querySelector('#male');
+const femaleBtn = document.querySelector('#female');
+const input = document.querySelectorAll('.features-item');
+const countBtn = document.querySelector('.count');
+const removeBtn = document.querySelector('.delete');
+const inputWrap = document.querySelector('.app-features');
+const age = document.querySelector('#age');
+const height = document.querySelector('#height');
+const weight = document.querySelector('#weight');
+const min = document.querySelector('#min');
+const low = document.querySelector('#low');
+const mid = document.querySelector('#mid');
+const high = document.querySelector('#high');
+const decrease = document.querySelector('.decrease');
+const normal = document.querySelector('.normal');
+const increase = document.querySelector('.increase');
+const male = document.querySelector('.male');
+const female = document.querySelector('.female');
+const results = document.querySelectorAll('.app-results-item-content');
+
+export { female, male, maleBtn, femaleBtn, min, countBtn, removeBtn, input, results, increase, normal, decrease, weight, height, age, inputWrap, high, low, mid };
